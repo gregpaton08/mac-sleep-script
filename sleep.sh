@@ -7,8 +7,8 @@ print_usage () {
 # Read the number of minutes from the command line.
 MINUTES=${1}
 # If minutes wasn't provided then ask the user.
-if [ -z ${MINUTES} ];  then
-  read -p "How many minutes before going to sleep? " MINUTES
+if [ -z "${MINUTES}" ];  then
+  read -rp "How many minutes before going to sleep? " MINUTES
 fi
 
 # Validate the input is a valid integer.
